@@ -72,7 +72,7 @@ ul li i {
 }
 
 a {
-  color: #4fc3f7;
+  color: #3e99c3;
   text-decoration: none;
 }
 
@@ -100,6 +100,10 @@ a:hover {
   margin-top: 4px;
   color: #ccc;
   font-size: 0.95em;
+}
+
+strong {
+  margin-right: 5px;
 }
 
 @media (max-width: 600px) {
