@@ -110,6 +110,7 @@ body {
 
 .theme-toggle__icon {
   position: absolute;
+
   top: 5px;
   z-index: 1;
   font-size: 12px;
@@ -117,11 +118,13 @@ body {
 }
 
 .theme-toggle__icon--moon {
-  right: 8px;
+  /* right: 8px; */
+  right: 10%;
 }
 
 .theme-toggle__icon--sun {
-  left: 8px;
+  /* left: 8px; */
+  left: 14%;
 }
 
 /* Profile */
