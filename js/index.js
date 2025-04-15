@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Theme Toggle
   const themeToggle = document.getElementById('themeToggle');
 
-  // Set dark theme by default
   document.documentElement.setAttribute('data-theme', 'dark');
   themeToggle.checked = true;
 
@@ -11,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.setAttribute('data-theme', newTheme);
   });
 
-  // Upload photo functionality
   const profilePhoto = document.getElementById('profilePhoto');
 
   profilePhoto.addEventListener('click', function () {
