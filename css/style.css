@@ -63,7 +63,7 @@ body {
 }
 
 /* Theme Toggle Switch (Tumbler) */
-.theme-toggle {
+/* .theme-toggle {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -118,13 +118,75 @@ body {
 }
 
 .theme-toggle__icon--moon {
-  /* right: 8px; */
+   right: 8px;
   right: 10%;
 }
 
 .theme-toggle__icon--sun {
-  /* left: 8px; */
+  left: 8px; 
   left: 14%;
+} */
+
+.theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.theme-toggle__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-toggle__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--toggle-bg);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.theme-toggle__slider:before {
+  position: absolute;
+  content: '';
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--toggle-circle);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.theme-toggle__input:checked + .theme-toggle__slider {
+  background-color: var(--primary-color);
+}
+
+.theme-toggle__input:checked + .theme-toggle__slider:before {
+  transform: translateX(30px);
+}
+
+.theme-toggle__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 12px;
+  transition: var(--transition);
+}
+
+.theme-toggle__icon--moon {
+  right: 8px;
+}
+
+.theme-toggle__icon--sun {
+  left: 7px;
 }
 
 /* Profile */
